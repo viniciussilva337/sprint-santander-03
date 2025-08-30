@@ -1,0 +1,596 @@
+{
+  "2025-01": {
+    "clusters": [
+      {
+        "id": 0,
+        "name": "INÍCIO",
+        "count": 61,
+        "percentage": 3.0,
+        "faturamento_medio": 98144017,
+        "saldo_medio": -1247422,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      },
+      {
+        "id": 1,
+        "name": "EXPANSÃO",
+        "count": 53,
+        "percentage": 2.6,
+        "faturamento_medio": 149495660,
+        "saldo_medio": -9858250,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      },
+      {
+        "id": 2,
+        "name": "MATURIDADE",
+        "count": 47,
+        "percentage": 2.4,
+        "faturamento_medio": 135749126,
+        "saldo_medio": 9475950,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      },
+      {
+        "id": 3,
+        "name": "DECLÍNIO",
+        "count": 1839,
+        "percentage": 92.0,
+        "faturamento_medio": 4320378,
+        "saldo_medio": -8665,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      }
+    ],
+    "charts": {
+      "pie_distribution": [
+        {
+          "name": "INÍCIO",
+          "value": 61,
+          "color": "#EC0000"
+        },
+        {
+          "name": "EXPANSÃO",
+          "value": 53,
+          "color": "#FF4D4D"
+        },
+        {
+          "name": "MATURIDADE",
+          "value": 47,
+          "color": "#FF8080"
+        },
+        {
+          "name": "DECLÍNIO",
+          "value": 1839,
+          "color": "#FFB3B3"
+        }
+      ],
+      "bar_revenue": [
+        {
+          "name": "INÍ",
+          "value": 98144017
+        },
+        {
+          "name": "EXP",
+          "value": 149495660
+        },
+        {
+          "name": "MAT",
+          "value": 135749126
+        },
+        {
+          "name": "DEC",
+          "value": 4320378
+        }
+      ]
+    },
+    "stats": {
+      "total_empresas": 10000,
+      "total_transacoes": 0,
+      "volume_total": 0,
+      "ticket_medio": 0,
+      "silhouette_score": 0.865,
+      "faturamento_medio_geral": 14348717,
+      "saldo_medio_geral": -33508
+    }
+  },
+  "2025-02": {
+    "clusters": [
+      {
+        "id": 0,
+        "name": "INÍCIO",
+        "count": 1850,
+        "percentage": 92.5,
+        "faturamento_medio": 4636525,
+        "saldo_medio": 2755,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      },
+      {
+        "id": 1,
+        "name": "EXPANSÃO",
+        "count": 68,
+        "percentage": 3.4,
+        "faturamento_medio": 121427200,
+        "saldo_medio": -913688,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      },
+      {
+        "id": 2,
+        "name": "MATURIDADE",
+        "count": 34,
+        "percentage": 1.7,
+        "faturamento_medio": 143783171,
+        "saldo_medio": -11156832,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      },
+      {
+        "id": 3,
+        "name": "DECLÍNIO",
+        "count": 48,
+        "percentage": 2.4,
+        "faturamento_medio": 135670666,
+        "saldo_medio": 10023420,
+        "transacoes_medio": 0.0,
+        "entrada_media": 0,
+        "saida_media": 0
+      }
+    ],
+    "charts": {
+      "pie_distribution": [
+        {
+          "name": "INÍCIO",
+          "value": 1850,
+          "color": "#EC0000"
+        },
+        {
+          "name": "EXPANSÃO",
+          "value": 68,
+          "color": "#FF4D4D"
+        },
+        {
+          "name": "MATURIDADE",
+          "value": 34,
+          "color": "#FF8080"
+        },
+        {
+          "name": "DECLÍNIO",
+          "value": 48,
+          "color": "#FFB3B3"
+        }
+      ],
+      "bar_revenue": [
+        {
+          "name": "INÍ",
+          "value": 4636525
+        },
+        {
+          "name": "EXP",
+          "value": 121427200
+        },
+        {
+          "name": "MAT",
+          "value": 143783171
+        },
+        {
+          "name": "DEC",
+          "value": 135670666
+        }
+      ]
+    },
+    "stats": {
+      "total_empresas": 10000,
+      "total_transacoes": 0,
+      "volume_total": 0,
+      "ticket_medio": 0,
+      "silhouette_score": 0.876,
+      "faturamento_medio_geral": 14348717,
+      "saldo_medio_geral": 13654
+    }
+  },
+  "2025-03": {
+    "clusters": [
+      {
+        "id": 0,
+        "name": "INÍCIO",
+        "count": 1792,
+        "percentage": 89.6,
+        "faturamento_medio": 5332980,
+        "saldo_medio": -470,
+        "transacoes_medio": 3.3,
+        "entrada_media": 54020,
+        "saida_media": 53906
+      },
+      {
+        "id": 1,
+        "name": "EXPANSÃO",
+        "count": 76,
+        "percentage": 3.8,
+        "faturamento_medio": 6119831,
+        "saldo_medio": 31941,
+        "transacoes_medio": 90.7,
+        "entrada_media": 3911363,
+        "saida_media": 3659897
+      },
+      {
+        "id": 2,
+        "name": "MATURIDADE",
+        "count": 66,
+        "percentage": 3.3,
+        "faturamento_medio": 145253480,
+        "saldo_medio": -9823106,
+        "transacoes_medio": 4.0,
+        "entrada_media": 37887,
+        "saida_media": 113089
+      },
+      {
+        "id": 3,
+        "name": "DECLÍNIO",
+        "count": 66,
+        "percentage": 3.3,
+        "faturamento_medio": 130710661,
+        "saldo_medio": 6618638,
+        "transacoes_medio": 3.3,
+        "entrada_media": 42365,
+        "saida_media": 24836
+      }
+    ],
+    "charts": {
+      "pie_distribution": [
+        {
+          "name": "INÍCIO",
+          "value": 1792,
+          "color": "#EC0000"
+        },
+        {
+          "name": "EXPANSÃO",
+          "value": 76,
+          "color": "#FF4D4D"
+        },
+        {
+          "name": "MATURIDADE",
+          "value": 66,
+          "color": "#FF8080"
+        },
+        {
+          "name": "DECLÍNIO",
+          "value": 66,
+          "color": "#FFB3B3"
+        }
+      ],
+      "bar_revenue": [
+        {
+          "name": "INÍ",
+          "value": 5332980
+        },
+        {
+          "name": "EXP",
+          "value": 6119831
+        },
+        {
+          "name": "MAT",
+          "value": 145253480
+        },
+        {
+          "name": "DEC",
+          "value": 130710661
+        }
+      ]
+    },
+    "stats": {
+      "total_empresas": 10000,
+      "total_transacoes": 33387,
+      "volume_total": 1908277667,
+      "ticket_medio": 57156,
+      "silhouette_score": 0.815,
+      "faturamento_medio_geral": 14348717,
+      "saldo_medio_geral": -44830
+    }
+  },
+  "2025-04": {
+    "clusters": [
+      {
+        "id": 0,
+        "name": "INÍCIO",
+        "count": 1784,
+        "percentage": 89.2,
+        "faturamento_medio": 5106640,
+        "saldo_medio": 9601,
+        "transacoes_medio": 3.2,
+        "entrada_media": 50488,
+        "saida_media": 58901
+      },
+      {
+        "id": 1,
+        "name": "EXPANSÃO",
+        "count": 77,
+        "percentage": 3.9,
+        "faturamento_medio": 5916148,
+        "saldo_medio": -54982,
+        "transacoes_medio": 90.7,
+        "entrada_media": 3902924,
+        "saida_media": 3545783
+      },
+      {
+        "id": 2,
+        "name": "MATURIDADE",
+        "count": 65,
+        "percentage": 3.2,
+        "faturamento_medio": 134277820,
+        "saldo_medio": -7750808,
+        "transacoes_medio": 2.8,
+        "entrada_media": 43131,
+        "saida_media": 30020
+      },
+      {
+        "id": 3,
+        "name": "DECLÍNIO",
+        "count": 74,
+        "percentage": 3.7,
+        "faturamento_medio": 134345853,
+        "saldo_medio": 7775897,
+        "transacoes_medio": 4.3,
+        "entrada_media": 39711,
+        "saida_media": 85075
+      }
+    ],
+    "charts": {
+      "pie_distribution": [
+        {
+          "name": "INÍCIO",
+          "value": 1784,
+          "color": "#EC0000"
+        },
+        {
+          "name": "EXPANSÃO",
+          "value": 77,
+          "color": "#FF4D4D"
+        },
+        {
+          "name": "MATURIDADE",
+          "value": 65,
+          "color": "#FF8080"
+        },
+        {
+          "name": "DECLÍNIO",
+          "value": 74,
+          "color": "#FFB3B3"
+        }
+      ],
+      "bar_revenue": [
+        {
+          "name": "INÍ",
+          "value": 5106640
+        },
+        {
+          "name": "EXP",
+          "value": 5916148
+        },
+        {
+          "name": "MAT",
+          "value": 134277820
+        },
+        {
+          "name": "DEC",
+          "value": 134345853
+        }
+      ]
+    },
+    "stats": {
+      "total_empresas": 10000,
+      "total_transacoes": 33324,
+      "volume_total": 1872662231,
+      "ticket_medio": 56195,
+      "silhouette_score": 0.818,
+      "faturamento_medio_geral": 14348717,
+      "saldo_medio_geral": -7327
+    }
+  },
+  "2025-05": {
+    "clusters": [
+      {
+        "id": 0,
+        "name": "INÍCIO",
+        "count": 1790,
+        "percentage": 89.5,
+        "faturamento_medio": 5397058,
+        "saldo_medio": 33107,
+        "transacoes_medio": 3.1,
+        "entrada_media": 48172,
+        "saida_media": 53959
+      },
+      {
+        "id": 1,
+        "name": "EXPANSÃO",
+        "count": 81,
+        "percentage": 4.0,
+        "faturamento_medio": 7515590,
+        "saldo_medio": 165434,
+        "transacoes_medio": 88.5,
+        "entrada_media": 3946835,
+        "saida_media": 3505138
+      },
+      {
+        "id": 2,
+        "name": "MATURIDADE",
+        "count": 51,
+        "percentage": 2.5,
+        "faturamento_medio": 138639958,
+        "saldo_medio": -8808219,
+        "transacoes_medio": 2.6,
+        "entrada_media": 13360,
+        "saida_media": 23979
+      },
+      {
+        "id": 3,
+        "name": "DECLÍNIO",
+        "count": 78,
+        "percentage": 3.9,
+        "faturamento_medio": 139683397,
+        "saldo_medio": 7553376,
+        "transacoes_medio": 3.0,
+        "entrada_media": 29264,
+        "saida_media": 25610
+      }
+    ],
+    "charts": {
+      "pie_distribution": [
+        {
+          "name": "INÍCIO",
+          "value": 1790,
+          "color": "#EC0000"
+        },
+        {
+          "name": "EXPANSÃO",
+          "value": 81,
+          "color": "#FF4D4D"
+        },
+        {
+          "name": "MATURIDADE",
+          "value": 51,
+          "color": "#FF8080"
+        },
+        {
+          "name": "DECLÍNIO",
+          "value": 78,
+          "color": "#FFB3B3"
+        }
+      ],
+      "bar_revenue": [
+        {
+          "name": "INÍ",
+          "value": 5397058
+        },
+        {
+          "name": "EXP",
+          "value": 7515590
+        },
+        {
+          "name": "MAT",
+          "value": 138639958
+        },
+        {
+          "name": "DEC",
+          "value": 139683397
+        }
+      ]
+    },
+    "stats": {
+      "total_empresas": 10000,
+      "total_transacoes": 33289,
+      "volume_total": 1912204506,
+      "ticket_medio": 57442,
+      "silhouette_score": 0.822,
+      "faturamento_medio_geral": 14348717,
+      "saldo_medio_geral": 7886
+    }
+  },
+  "todos": {
+    "clusters": [
+      {
+        "id": 0,
+        "name": "INÍCIO",
+        "count": 1798,
+        "percentage": 89.9,
+        "faturamento_medio": 5324789,
+        "saldo_medio": 10733,
+        "transacoes_medio": 9.3,
+        "entrada_media": 129988,
+        "saida_media": 133035
+      },
+      {
+        "id": 1,
+        "name": "EXPANSÃO",
+        "count": 79,
+        "percentage": 4.0,
+        "faturamento_medio": 7914908,
+        "saldo_medio": -145188,
+        "transacoes_medio": 273.2,
+        "entrada_media": 11418403,
+        "saida_media": 10425913
+      },
+      {
+        "id": 2,
+        "name": "MATURIDADE",
+        "count": 54,
+        "percentage": 2.7,
+        "faturamento_medio": 141439864,
+        "saldo_medio": -8747136,
+        "transacoes_medio": 7.7,
+        "entrada_media": 96855,
+        "saida_media": 135364
+      },
+      {
+        "id": 3,
+        "name": "DECLÍNIO",
+        "count": 69,
+        "percentage": 3.5,
+        "faturamento_medio": 142212790,
+        "saldo_medio": 8797159,
+        "transacoes_medio": 9.4,
+        "entrada_media": 124531,
+        "saida_media": 108750
+      }
+    ],
+    "charts": {
+      "pie_distribution": [
+        {
+          "name": "INÍCIO",
+          "value": 1798,
+          "color": "#EC0000"
+        },
+        {
+          "name": "EXPANSÃO",
+          "value": 79,
+          "color": "#FF4D4D"
+        },
+        {
+          "name": "MATURIDADE",
+          "value": 54,
+          "color": "#FF8080"
+        },
+        {
+          "name": "DECLÍNIO",
+          "value": 69,
+          "color": "#FFB3B3"
+        }
+      ],
+      "bar_revenue": [
+        {
+          "name": "INÍ",
+          "value": 5324789
+        },
+        {
+          "name": "EXP",
+          "value": 7914908
+        },
+        {
+          "name": "MAT",
+          "value": 141439864
+        },
+        {
+          "name": "DEC",
+          "value": 142212790
+        }
+      ]
+    },
+    "stats": {
+      "total_empresas": 50000,
+      "total_transacoes": 100000,
+      "volume_total": 5693144404,
+      "ticket_medio": 56931,
+      "silhouette_score": 0.836,
+      "faturamento_medio_geral": 14348717,
+      "saldo_medio_geral": -12824
+    }
+  }
+}

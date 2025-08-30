@@ -1,0 +1,112 @@
+{
+  "clusters": [
+    {
+      "id": 0,
+      "name": "INÍCIO",
+      "count": 4471,
+      "percentage": 89.4,
+      "faturamento_medio": 4993853,
+      "saldo_medio": -3146,
+      "transacoes_medio": 9.1,
+      "entrada_media": 112935,
+      "saida_media": 137735
+    },
+    {
+      "id": 1,
+      "name": "EXPANSÃO",
+      "count": 109,
+      "percentage": 2.2,
+      "faturamento_medio": 7085076,
+      "saldo_medio": -177446,
+      "transacoes_medio": 196.9,
+      "entrada_media": 13857330,
+      "saida_media": 4226620
+    },
+    {
+      "id": 2,
+      "name": "MATURIDADE",
+      "count": 77,
+      "percentage": 1.5,
+      "faturamento_medio": 9086725,
+      "saldo_medio": -150755,
+      "transacoes_medio": 333.5,
+      "entrada_media": 7007588,
+      "saida_media": 17029142
+    },
+    {
+      "id": 3,
+      "name": "DECLÍNIO",
+      "count": 343,
+      "percentage": 6.9,
+      "faturamento_medio": 136280138,
+      "saldo_medio": 783258,
+      "transacoes_medio": 7.4,
+      "entrada_media": 59283,
+      "saida_media": 89234
+    }
+  ],
+  "charts": {
+    "pie_distribution": [
+      {
+        "name": "INÍCIO",
+        "value": 4471,
+        "color": "#EC0000"
+      },
+      {
+        "name": "EXPANSÃO",
+        "value": 109,
+        "color": "#FF4D4D"
+      },
+      {
+        "name": "MATURIDADE",
+        "value": 77,
+        "color": "#FF8080"
+      },
+      {
+        "name": "DECLÍNIO",
+        "value": 343,
+        "color": "#FFB3B3"
+      }
+    ],
+    "bar_revenue": [
+      {
+        "name": "INÍ",
+        "value": 4993853
+      },
+      {
+        "name": "EXP",
+        "value": 7085076
+      },
+      {
+        "name": "MAT",
+        "value": 9086725
+      },
+      {
+        "name": "DEC",
+        "value": 136280138
+      }
+    ],
+    "line_quality": [
+      {
+        "name": "K=2",
+        "value": 0.421
+      },
+      {
+        "name": "K=3",
+        "value": 0.589
+      },
+      {
+        "name": "K=4",
+        "value": 0.806
+      },
+      {
+        "name": "K=5",
+        "value": 0.798
+      },
+      {
+        "name": "K=6",
+        "value": 0.734
+      }
+    ]
+  }
+}
