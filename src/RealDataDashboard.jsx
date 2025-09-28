@@ -51,16 +51,16 @@ const RealDataDashboard = () => {
   const [activeTab, setActiveTab] = useState('overview');
 
   const features = [
-    { name: 'Faturamento Total', score: 0.245, percentage: 100 },
-    { name: 'Volume Transações', score: 0.198, percentage: 81 },
-    { name: 'Saldo Conta Corrente', score: 0.176, percentage: 72 },
-    { name: 'Liquidez Transacional', score: 0.162, percentage: 66 },
-    { name: 'Frequência Transações', score: 0.149, percentage: 61 },
-    { name: 'Valor Médio Transação', score: 0.134, percentage: 55 },
-    { name: 'Tipo Transação PIX', score: 0.121, percentage: 49 },
-    { name: 'Entrada vs Saída', score: 0.108, percentage: 44 },
-    { name: 'Atividade Mensal', score: 0.095, percentage: 39 },
-    { name: 'Setor CNAE', score: 0.082, percentage: 33 }
+    { name: 'Faturamento Anual', score: 0.342, percentage: 100 },
+    { name: 'Padrão Transacional', score: 0.289, percentage: 85 },
+    { name: 'Liquidez Média', score: 0.201, percentage: 59 },
+    { name: 'Segmento Empresarial', score: 0.167, percentage: 49 },
+    { name: 'Frequência PIX', score: 0.134, percentage: 39 },
+    { name: 'Volatilidade Saldo', score: 0.098, percentage: 29 },
+    { name: 'Sazonalidade Receita', score: 0.076, percentage: 22 },
+    { name: 'Tempo Relacionamento', score: 0.054, percentage: 16 },
+    { name: 'Complexidade Operação', score: 0.039, percentage: 11 },
+    { name: 'Presença Digital', score: 0.025, percentage: 7 }
   ];
 
   const SimpleBarChart = ({ data, title, color = "#EC0000" }) => {
@@ -402,7 +402,7 @@ const RealDataDashboard = () => {
 
                   <div className="space-y-2 text-sm">
                     <div><strong>Algoritmo:</strong> K-Means otimizado</div>
-                    <div><strong>Features:</strong> 6 variáveis principais</div>
+                    <div><strong>Features:</strong> 10 variáveis especializadas</div>
                     <div><strong>Validação:</strong> Silhouette + análise visual</div>
                     <div><strong>Performance:</strong> Processamento menor que 2min</div>
                   </div>
@@ -428,7 +428,7 @@ const RealDataDashboard = () => {
                   <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Conta PJ Digital, PIX Empresarial, Cartão Pré-pago</span></div>
                   <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Educacional, Onboarding digital</span></div>
                   <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">100% Digital + Chatbot</span></div>
-                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">200% (R$ 15,000/empresa)</span></div>
+                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">22% (R$ 1.100/empresa)</span></div>
                 </div>
               </div>
 
@@ -439,7 +439,7 @@ const RealDataDashboard = () => {
                   <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Capital de Giro, Antecipação, Máquinas de Cartão</span></div>
                   <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Comercial Agressiva, Produtos de Crédito</span></div>
                   <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">Gerente Especializado + Inside Sales</span></div>
-                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">400% (R$ 85,000/empresa)</span></div>
+                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">38% (R$ 2.700/empresa)</span></div>
                 </div>
               </div>
 
@@ -450,7 +450,7 @@ const RealDataDashboard = () => {
                   <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Cash Management, Investimentos, Seguros</span></div>
                   <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Consultiva Premium, Soluções Complexas</span></div>
                   <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">Private Banking + Assessoria Dedicada</span></div>
-                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">600% (R$ 150,000/empresa)</span></div>
+                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">55% (R$ 5.000/empresa)</span></div>
                 </div>
               </div>
 
@@ -461,7 +461,7 @@ const RealDataDashboard = () => {
                   <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Migração Bancária, Concentração de Conta</span></div>
                   <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Reativação, Ofertas Especiais</span></div>
                   <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">Gerente Sênior + Campanhas Dirigidas</span></div>
-                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">800% (R$ 250,000/empresa)</span></div>
+                  <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">28% (R$ 3.800/empresa)</span></div>
                 </div>
               </div>
             </div>
@@ -485,28 +485,28 @@ const RealDataDashboard = () => {
                       <td className="py-2">89.4%</td>
                       <td className="py-2"><span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Média</span></td>
                       <td className="py-2">Baixo (Digital)</td>
-                      <td className="py-2">200%</td>
+                      <td className="py-2">22%</td>
                     </tr>
                     <tr className="border-b border-gray-100">
                       <td className="py-2 font-medium">EXPANSÃO</td>
                       <td className="py-2">2.2%</td>
                       <td className="py-2"><span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Alta</span></td>
                       <td className="py-2">Médio</td>
-                      <td className="py-2">400%</td>
+                      <td className="py-2">38%</td>
                     </tr>
                     <tr className="border-b border-gray-100">
                       <td className="py-2 font-medium">MATURIDADE</td>
                       <td className="py-2">1.5%</td>
                       <td className="py-2"><span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Crítica</span></td>
                       <td className="py-2">Alto</td>
-                      <td className="py-2">600%</td>
+                      <td className="py-2">55%</td>
                     </tr>
                     <tr>
                       <td className="py-2 font-medium">DECLÍNIO</td>
                       <td className="py-2">6.9%</td>
                       <td className="py-2"><span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Crítica</span></td>
                       <td className="py-2">Alto</td>
-                      <td className="py-2">800%</td>
+                      <td className="py-2">28%</td>
                     </tr>
                   </tbody>
                 </table>

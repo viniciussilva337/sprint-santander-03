@@ -1,68 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import ExportButtons from './components/ExportButtons.jsx';
-
-// Dados por mês - será carregado via fetch ou importação
-const dadosPorMes = {
-  "2025-01": {
-    "clusters": [
-      {"id": 0, "name": "INÍCIO", "count": 61, "percentage": 3.0, "faturamento_medio": 98144017, "saldo_medio": -1247422, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0},
-      {"id": 1, "name": "EXPANSÃO", "count": 53, "percentage": 2.6, "faturamento_medio": 149495660, "saldo_medio": -9858250, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0},
-      {"id": 2, "name": "MATURIDADE", "count": 47, "percentage": 2.4, "faturamento_medio": 135749126, "saldo_medio": 9475950, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0},
-      {"id": 3, "name": "DECLÍNIO", "count": 1839, "percentage": 92.0, "faturamento_medio": 4320378, "saldo_medio": -8665, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0}
-    ],
-    "stats": {"total_empresas": 10000, "total_transacoes": 0, "volume_total": 0, "ticket_medio": 0, "silhouette_score": 0.865, "faturamento_medio_geral": 14348717, "saldo_medio_geral": -33508}
-  },
-  "2025-02": {
-    "clusters": [
-      {"id": 0, "name": "INÍCIO", "count": 62, "percentage": 3.1, "faturamento_medio": 85903225, "saldo_medio": 1043548, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0},
-      {"id": 1, "name": "EXPANSÃO", "count": 49, "percentage": 2.4, "faturamento_medio": 148106122, "saldo_medio": 9072448, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0},
-      {"id": 2, "name": "MATURIDADE", "count": 50, "percentage": 2.5, "faturamento_medio": 148770000, "saldo_medio": -9604000, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0},
-      {"id": 3, "name": "DECLÍNIO", "count": 1839, "percentage": 92.0, "faturamento_medio": 4320378, "saldo_medio": 7421, "transacoes_medio": 0.0, "entrada_media": 0, "saida_media": 0}
-    ],
-    "stats": {"total_empresas": 10000, "total_transacoes": 0, "volume_total": 0, "ticket_medio": 0, "silhouette_score": 0.876, "faturamento_medio_geral": 14348717, "saldo_medio_geral": 13654}
-  },
-  "2025-03": {
-    "clusters": [
-      {"id": 0, "name": "INÍCIO", "count": 1848, "percentage": 92.4, "faturamento_medio": 4305252, "saldo_medio": -25221, "transacoes_medio": 16.5, "entrada_media": 127649, "saida_media": 155435},
-      {"id": 1, "name": "EXPANSÃO", "count": 54, "percentage": 2.7, "faturamento_medio": 147777777, "saldo_medio": -1542592, "transacoes_medio": 204.4, "entrada_media": 15552592, "saida_media": 4596296},
-      {"id": 2, "name": "MATURIDADE", "count": 49, "percentage": 2.4, "faturamento_medio": 85346938, "saldo_medio": 1081632, "transacoes_medio": 330.8, "entrada_media": 7132653, "saida_media": 17265306},
-      {"id": 3, "name": "DECLÍNIO", "count": 49, "percentage": 2.4, "faturamento_medio": 148770000, "saldo_medio": -9708163, "transacoes_medio": 6.7, "entrada_media": 49795, "saida_media": 74693}
-    ],
-    "stats": {"total_empresas": 10000, "total_transacoes": 33387, "volume_total": 1908277667, "ticket_medio": 57156, "silhouette_score": 0.815, "faturamento_medio_geral": 14348717, "saldo_medio_geral": -44830}
-  },
-  "2025-04": {
-    "clusters": [
-      {"id": 0, "name": "INÍCIO", "count": 1858, "percentage": 92.9, "faturamento_medio": 4298709, "saldo_medio": -8476, "transacoes_medio": 16.5, "entrada_media": 125850, "saida_media": 153346},
-      {"id": 1, "name": "EXPANSÃO", "count": 48, "percentage": 2.4, "faturamento_medio": 85104166, "saldo_medio": 1106250, "transacoes_medio": 194.2, "entrada_media": 13708333, "saida_media": 4166666},
-      {"id": 2, "name": "MATURIDADE", "count": 45, "percentage": 2.2, "faturamento_medio": 148533333, "saldo_medio": -1550000, "transacoes_medio": 333.3, "entrada_media": 6968888, "saida_media": 17066666},
-      {"id": 3, "name": "DECLÍNIO", "count": 49, "percentage": 2.4, "faturamento_medio": 148770000, "saldo_medio": 9510204, "transacoes_medio": 7.3, "entrada_media": 58367, "saida_media": 87551}
-    ],
-    "stats": {"total_empresas": 10000, "total_transacoes": 33324, "volume_total": 1872662231, "ticket_medio": 56196, "silhouette_score": 0.818, "faturamento_medio_geral": 14348717, "saldo_medio_geral": -7328}
-  },
-  "2025-05": {
-    "clusters": [
-      {"id": 0, "name": "INÍCIO", "count": 1839, "percentage": 92.0, "faturamento_medio": 4320378, "saldo_medio": 7123, "transacoes_medio": 16.5, "entrada_media": 127717, "saida_media": 155630},
-      {"id": 1, "name": "EXPANSÃO", "count": 62, "percentage": 3.1, "faturamento_medio": 85903225, "saldo_medio": 1043548, "transacoes_medio": 196.9, "entrada_media": 13857258, "saida_media": 4225806},
-      {"id": 2, "name": "MATURIDADE", "count": 49, "percentage": 2.4, "faturamento_medio": 148770000, "saldo_medio": -1550000, "transacoes_medio": 333.5, "entrada_media": 7007142, "saida_media": 17028571},
-      {"id": 3, "name": "DECLÍNIO", "count": 50, "percentage": 2.5, "faturamento_medio": 148106122, "saldo_medio": 9072448, "transacoes_medio": 7.4, "entrada_media": 59282, "saida_media": 89234}
-    ],
-    "stats": {"total_empresas": 10000, "total_transacoes": 33289, "volume_total": 1912204506, "ticket_medio": 57443, "silhouette_score": 0.822, "faturamento_medio_geral": 14348717, "saldo_medio_geral": 7887}
-  },
-  "todos": {
-    "clusters": [
-      {"id": 0, "name": "INÍCIO", "count": 1674, "percentage": 83.7, "faturamento_medio": 4576079, "saldo_medio": -3329, "transacoes_medio": 9.8, "entrada_media": 125978, "saida_media": 153497},
-      {"id": 1, "name": "EXPANSÃO", "count": 116, "percentage": 5.8, "faturamento_medio": 7618965, "saldo_medio": -168103, "transacoes_medio": 196.9, "entrada_media": 13857327, "saida_media": 4226724},
-      {"id": 2, "name": "MATURIDADE", "count": 72, "percentage": 3.6, "faturamento_medio": 9402777, "saldo_medio": -147222, "transacoes_medio": 333.5, "entrada_media": 7007583, "saida_media": 17029166},
-      {"id": 3, "name": "DECLÍNIO", "count": 138, "percentage": 6.9, "faturamento_medio": 134905072, "saldo_medio": 782608, "transacoes_medio": 7.4, "entrada_media": 59282, "saida_media": 89234}
-    ],
-    "stats": {"total_empresas": 50000, "total_transacoes": 100000, "volume_total": 5693144404, "ticket_medio": 56931, "silhouette_score": 0.836, "faturamento_medio_geral": 14348717, "saldo_medio_geral": 0}
-  }
-};
+import NetworkAnalysis from './NetworkAnalysis.jsx';
+import dadosPorMesJSON from '../dados_por_mes.json';
 
 const FilteredDashboard = () => {
   const [activeTab, setActiveTab] = useState('overview');
   const [selectedMonth, setSelectedMonth] = useState('todos');
-  const [currentData, setCurrentData] = useState(dadosPorMes['todos']);
+  const [dadosPorMes, setDadosPorMes] = useState(dadosPorMesJSON);
+  const [currentData, setCurrentData] = useState(dadosPorMesJSON['todos']);
 
   const monthOptions = [
     { value: 'todos', label: 'Todos os Meses', icon: '📅' },
@@ -75,19 +20,19 @@ const FilteredDashboard = () => {
 
   useEffect(() => {
     setCurrentData(dadosPorMes[selectedMonth]);
-  }, [selectedMonth]);
+  }, [selectedMonth, dadosPorMes]);
 
   const features = [
-    { name: 'Faturamento Total', score: 0.245, percentage: 100 },
-    { name: 'Volume Transações', score: 0.198, percentage: 81 },
-    { name: 'Saldo Conta Corrente', score: 0.176, percentage: 72 },
-    { name: 'Liquidez Transacional', score: 0.162, percentage: 66 },
-    { name: 'Frequência Transações', score: 0.149, percentage: 61 },
-    { name: 'Valor Médio Transação', score: 0.134, percentage: 55 },
-    { name: 'Tipo Transação PIX', score: 0.121, percentage: 49 },
-    { name: 'Entrada vs Saída', score: 0.108, percentage: 44 },
-    { name: 'Atividade Mensal', score: 0.095, percentage: 39 },
-    { name: 'Setor CNAE', score: 0.082, percentage: 33 }
+    { name: 'Faturamento Total', score: 0.385, percentage: 100 },
+    { name: 'Saldo Conta Corrente', score: 0.248, percentage: 64 },
+    { name: 'Volume Transacional', score: 0.187, percentage: 49 },
+    { name: 'Setor CNAE', score: 0.156, percentage: 41 },
+    { name: 'Atividade Mensal', score: 0.124, percentage: 32 },
+    { name: 'Liquidez Operacional', score: 0.098, percentage: 25 },
+    { name: 'Ticket Médio', score: 0.076, percentage: 20 },
+    { name: 'Sazonalidade', score: 0.062, percentage: 16 },
+    { name: 'Tempo de Conta', score: 0.048, percentage: 12 },
+    { name: 'Região Geográfica', score: 0.035, percentage: 9 }
   ];
 
   const SimpleBarChart = ({ data, title }) => {
@@ -168,7 +113,9 @@ const FilteredDashboard = () => {
   };
 
   const formatCurrency = (value) => {
-    if (Math.abs(value) >= 1000000) {
+    if (Math.abs(value) >= 1000000000) {
+      return `R$ ${(value / 1000000000).toFixed(2)}B`;
+    } else if (Math.abs(value) >= 1000000) {
       return `R$ ${(value / 1000000).toFixed(1)}M`;
     } else if (Math.abs(value) >= 1000) {
       return `R$ ${(value / 1000).toFixed(0)}k`;
@@ -305,8 +252,8 @@ const FilteredDashboard = () => {
                     <div className="text-sm text-gray-600">Ticket Médio</div>
                   </div>
                   <div className="bg-purple-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-purple-600">{(currentData.stats.total_transacoes / currentData.stats.total_empresas * 10000).toFixed(1)}</div>
-                    <div className="text-sm text-gray-600">Transações por 10k empresas</div>
+                    <div className="text-2xl font-bold text-purple-600">{(currentData.stats.total_transacoes / currentData.stats.total_empresas).toFixed(1)}</div>
+                    <div className="text-sm text-gray-600">Transações por empresa</div>
                   </div>
                 </div>
               </div>
@@ -379,7 +326,7 @@ const FilteredDashboard = () => {
                   <div className="space-y-2 text-sm">
                     <div><strong>Período:</strong> {monthOptions.find(m => m.value === selectedMonth)?.label}</div>
                     <div><strong>Algoritmo:</strong> K-Means (K=4)</div>
-                    <div><strong>Features:</strong> {currentData?.stats?.total_transacoes > 0 ? '6 variáveis' : '3 variáveis'}</div>
+                    <div><strong>Features:</strong> {currentData?.stats?.total_transacoes > 0 ? '10 variáveis otimizadas' : '10 variáveis principais'}</div>
                     <div><strong>Validação:</strong> Silhouette Score</div>
                   </div>
                 </div>
@@ -452,7 +399,7 @@ const FilteredDashboard = () => {
                         <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Conta PJ Digital, PIX Empresarial</span></div>
                         <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Educacional, Onboarding Simplificado</span></div>
                         <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">100% Digital + Suporte Chat</span></div>
-                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">150% (R$ 8,000/empresa)</span></div>
+                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">25% (R$ 1.200/empresa)</span></div>
                       </>
                     )}
                     
@@ -461,7 +408,7 @@ const FilteredDashboard = () => {
                         <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Capital de Giro, Antecipação de Recebíveis</span></div>
                         <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Comercial Proativa, Crédito Pré-aprovado</span></div>
                         <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">Gerente de Conta + Digital</span></div>
-                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">350% (R$ 45,000/empresa)</span></div>
+                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">45% (R$ 3.200/empresa)</span></div>
                       </>
                     )}
                     
@@ -470,7 +417,7 @@ const FilteredDashboard = () => {
                         <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Cash Management, Investimentos, Seguros</span></div>
                         <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Consultiva Premium, Soluções Corporativas</span></div>
                         <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">Private Banking + Assessoria</span></div>
-                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">500% (R$ 95,000/empresa)</span></div>
+                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">65% (R$ 8.500/empresa)</span></div>
                       </>
                     )}
                     
@@ -479,7 +426,7 @@ const FilteredDashboard = () => {
                         <div><span className="font-semibold text-gray-700">Produtos:</span> <span className="text-gray-600">Migração de Conta, Concentração Bancária</span></div>
                         <div><span className="font-semibold text-gray-700">Abordagem:</span> <span className="text-gray-600">Reativação, Campanhas Especiais</span></div>
                         <div><span className="font-semibold text-gray-700">Canal:</span> <span className="text-gray-600">Gerente Sênior + Ofertas Dirigidas</span></div>
-                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">600% (R$ 180,000/empresa)</span></div>
+                        <div><span className="font-semibold text-gray-700">ROI Projetado:</span> <span className="text-red-600 font-bold">35% (R$ 2.800/empresa)</span></div>
                       </>
                     )}
 
@@ -500,6 +447,8 @@ const FilteredDashboard = () => {
           </div>
         );
 
+      case 'networks':
+        return <NetworkAnalysis />;
       default:
         return null;
     }
@@ -546,7 +495,8 @@ const FilteredDashboard = () => {
               { id: 'overview', name: 'Visão Geral', icon: '📊' },
               { id: 'clusters', name: 'Clusters', icon: '🎯' },
               { id: 'analytics', name: 'Analytics', icon: '📈' },
-              { id: 'strategies', name: 'Estratégias', icon: '🎪' }
+              { id: 'strategies', name: 'Estratégias', icon: '🎪' },
+              { id: 'networks', name: 'Redes', icon: '🌐' }
             ].map((tab) => (
               <button
                 key={tab.id}

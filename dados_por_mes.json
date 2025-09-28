@@ -4,44 +4,44 @@
       {
         "id": 0,
         "name": "INÍCIO",
-        "count": 61,
-        "percentage": 3.0,
-        "faturamento_medio": 98144017,
-        "saldo_medio": -1247422,
-        "transacoes_medio": 0.0,
+        "count": 760,
+        "percentage": 38,
+        "faturamento_medio": 2350000,
+        "saldo_medio": 12000,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       },
       {
         "id": 1,
         "name": "EXPANSÃO",
-        "count": 53,
-        "percentage": 2.6,
-        "faturamento_medio": 149495660,
-        "saldo_medio": -9858250,
-        "transacoes_medio": 0.0,
+        "count": 620,
+        "percentage": 31,
+        "faturamento_medio": 8200000,
+        "saldo_medio": -175000,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       },
       {
         "id": 2,
         "name": "MATURIDADE",
-        "count": 47,
-        "percentage": 2.4,
-        "faturamento_medio": 135749126,
-        "saldo_medio": 9475950,
-        "transacoes_medio": 0.0,
+        "count": 460,
+        "percentage": 23,
+        "faturamento_medio": 42000000,
+        "saldo_medio": 780000,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       },
       {
         "id": 3,
         "name": "DECLÍNIO",
-        "count": 1839,
-        "percentage": 92.0,
-        "faturamento_medio": 4320378,
-        "saldo_medio": -8665,
-        "transacoes_medio": 0.0,
+        "count": 160,
+        "percentage": 8,
+        "faturamento_medio": 1750000,
+        "saldo_medio": -38000,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       }
@@ -50,46 +50,46 @@
       "pie_distribution": [
         {
           "name": "INÍCIO",
-          "value": 61,
+          "value": 760,
           "color": "#EC0000"
         },
         {
           "name": "EXPANSÃO",
-          "value": 53,
+          "value": 620,
           "color": "#FF4D4D"
         },
         {
           "name": "MATURIDADE",
-          "value": 47,
+          "value": 460,
           "color": "#FF8080"
         },
         {
           "name": "DECLÍNIO",
-          "value": 1839,
+          "value": 160,
           "color": "#FFB3B3"
         }
       ],
       "bar_revenue": [
         {
           "name": "INÍ",
-          "value": 98144017
+          "value": 2350000
         },
         {
           "name": "EXP",
-          "value": 149495660
+          "value": 8200000
         },
         {
           "name": "MAT",
-          "value": 135749126
+          "value": 42000000
         },
         {
           "name": "DEC",
-          "value": 4320378
+          "value": 1750000
         }
       ]
     },
     "stats": {
-      "total_empresas": 10000,
+      "total_empresas": 2000,
       "total_transacoes": 0,
       "volume_total": 0,
       "ticket_medio": 0,
@@ -103,44 +103,44 @@
       {
         "id": 0,
         "name": "INÍCIO",
-        "count": 1850,
-        "percentage": 92.5,
-        "faturamento_medio": 4636525,
-        "saldo_medio": 2755,
-        "transacoes_medio": 0.0,
+        "count": 670,
+        "percentage": "33.5",
+        "faturamento_medio": 2350000,
+        "saldo_medio": 11000,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       },
       {
         "id": 1,
         "name": "EXPANSÃO",
-        "count": 68,
-        "percentage": 3.4,
-        "faturamento_medio": 121427200,
-        "saldo_medio": -913688,
-        "transacoes_medio": 0.0,
+        "count": 620,
+        "percentage": "31.0",
+        "faturamento_medio": 8400000,
+        "saldo_medio": -190000,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       },
       {
         "id": 2,
         "name": "MATURIDADE",
-        "count": 34,
-        "percentage": 1.7,
-        "faturamento_medio": 143783171,
-        "saldo_medio": -11156832,
-        "transacoes_medio": 0.0,
+        "count": 480,
+        "percentage": "24.0",
+        "faturamento_medio": 42500000,
+        "saldo_medio": 800000,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       },
       {
         "id": 3,
         "name": "DECLÍNIO",
-        "count": 48,
-        "percentage": 2.4,
-        "faturamento_medio": 135670666,
-        "saldo_medio": 10023420,
-        "transacoes_medio": 0.0,
+        "count": 230,
+        "percentage": "11.5",
+        "faturamento_medio": 1700000,
+        "saldo_medio": -52500,
+        "transacoes_medio": 0,
         "entrada_media": 0,
         "saida_media": 0
       }
@@ -149,46 +149,46 @@
       "pie_distribution": [
         {
           "name": "INÍCIO",
-          "value": 1850,
+          "value": 670,
           "color": "#EC0000"
         },
         {
           "name": "EXPANSÃO",
-          "value": 68,
+          "value": 620,
           "color": "#FF4D4D"
         },
         {
           "name": "MATURIDADE",
-          "value": 34,
+          "value": 480,
           "color": "#FF8080"
         },
         {
           "name": "DECLÍNIO",
-          "value": 48,
+          "value": 230,
           "color": "#FFB3B3"
         }
       ],
       "bar_revenue": [
         {
           "name": "INÍ",
-          "value": 4636525
+          "value": 2350000
         },
         {
           "name": "EXP",
-          "value": 121427200
+          "value": 8400000
         },
         {
           "name": "MAT",
-          "value": 143783171
+          "value": 42500000
         },
         {
           "name": "DEC",
-          "value": 135670666
+          "value": 1700000
         }
       ]
     },
     "stats": {
-      "total_empresas": 10000,
+      "total_empresas": 2000,
       "total_transacoes": 0,
       "volume_total": 0,
       "ticket_medio": 0,
@@ -202,10 +202,10 @@
       {
         "id": 0,
         "name": "INÍCIO",
-        "count": 1792,
-        "percentage": 89.6,
-        "faturamento_medio": 5332980,
-        "saldo_medio": -470,
+        "count": 700,
+        "percentage": "35.0",
+        "faturamento_medio": 2500000,
+        "saldo_medio": 15000,
         "transacoes_medio": 3.3,
         "entrada_media": 54020,
         "saida_media": 53906
@@ -213,10 +213,10 @@
       {
         "id": 1,
         "name": "EXPANSÃO",
-        "count": 76,
-        "percentage": 3.8,
-        "faturamento_medio": 6119831,
-        "saldo_medio": 31941,
+        "count": 640,
+        "percentage": "32.0",
+        "faturamento_medio": 8800000,
+        "saldo_medio": -180000,
         "transacoes_medio": 90.7,
         "entrada_media": 3911363,
         "saida_media": 3659897
@@ -224,21 +224,21 @@
       {
         "id": 2,
         "name": "MATURIDADE",
-        "count": 66,
-        "percentage": 3.3,
-        "faturamento_medio": 145253480,
-        "saldo_medio": -9823106,
-        "transacoes_medio": 4.0,
+        "count": 500,
+        "percentage": "25.0",
+        "faturamento_medio": 45000000,
+        "saldo_medio": 850000,
+        "transacoes_medio": 4,
         "entrada_media": 37887,
         "saida_media": 113089
       },
       {
         "id": 3,
         "name": "DECLÍNIO",
-        "count": 66,
-        "percentage": 3.3,
-        "faturamento_medio": 130710661,
-        "saldo_medio": 6618638,
+        "count": 160,
+        "percentage": "8.0",
+        "faturamento_medio": 1800000,
+        "saldo_medio": -45000,
         "transacoes_medio": 3.3,
         "entrada_media": 42365,
         "saida_media": 24836
@@ -248,49 +248,49 @@
       "pie_distribution": [
         {
           "name": "INÍCIO",
-          "value": 1792,
+          "value": 700,
           "color": "#EC0000"
         },
         {
           "name": "EXPANSÃO",
-          "value": 76,
+          "value": 640,
           "color": "#FF4D4D"
         },
         {
           "name": "MATURIDADE",
-          "value": 66,
+          "value": 500,
           "color": "#FF8080"
         },
         {
           "name": "DECLÍNIO",
-          "value": 66,
+          "value": 160,
           "color": "#FFB3B3"
         }
       ],
       "bar_revenue": [
         {
           "name": "INÍ",
-          "value": 5332980
+          "value": 2500000
         },
         {
           "name": "EXP",
-          "value": 6119831
+          "value": 8800000
         },
         {
           "name": "MAT",
-          "value": 145253480
+          "value": 45000000
         },
         {
           "name": "DEC",
-          "value": 130710661
+          "value": 1800000
         }
       ]
     },
     "stats": {
-      "total_empresas": 10000,
-      "total_transacoes": 33387,
-      "volume_total": 1908277667,
-      "ticket_medio": 57156,
+      "total_empresas": 2000,
+      "total_transacoes": 62886,
+      "volume_total": 3592236978,
+      "ticket_medio": 57123,
       "silhouette_score": 0.815,
       "faturamento_medio_geral": 14348717,
       "saldo_medio_geral": -44830
@@ -301,10 +301,10 @@
       {
         "id": 0,
         "name": "INÍCIO",
-        "count": 1784,
-        "percentage": 89.2,
-        "faturamento_medio": 5106640,
-        "saldo_medio": 9601,
+        "count": 730,
+        "percentage": "36.5",
+        "faturamento_medio": 2650000,
+        "saldo_medio": 19000,
         "transacoes_medio": 3.2,
         "entrada_media": 50488,
         "saida_media": 58901
@@ -312,10 +312,10 @@
       {
         "id": 1,
         "name": "EXPANSÃO",
-        "count": 77,
-        "percentage": 3.9,
-        "faturamento_medio": 5916148,
-        "saldo_medio": -54982,
+        "count": 660,
+        "percentage": "33.0",
+        "faturamento_medio": 9200000,
+        "saldo_medio": -170000,
         "transacoes_medio": 90.7,
         "entrada_media": 3902924,
         "saida_media": 3545783
@@ -323,10 +323,10 @@
       {
         "id": 2,
         "name": "MATURIDADE",
-        "count": 65,
-        "percentage": 3.2,
-        "faturamento_medio": 134277820,
-        "saldo_medio": -7750808,
+        "count": 520,
+        "percentage": "26.0",
+        "faturamento_medio": 47500000,
+        "saldo_medio": 900000,
         "transacoes_medio": 2.8,
         "entrada_media": 43131,
         "saida_media": 30020
@@ -334,10 +334,10 @@
       {
         "id": 3,
         "name": "DECLÍNIO",
-        "count": 74,
-        "percentage": 3.7,
-        "faturamento_medio": 134345853,
-        "saldo_medio": 7775897,
+        "count": 90,
+        "percentage": "4.5",
+        "faturamento_medio": 1900000,
+        "saldo_medio": -37500,
         "transacoes_medio": 4.3,
         "entrada_media": 39711,
         "saida_media": 85075
@@ -347,49 +347,49 @@
       "pie_distribution": [
         {
           "name": "INÍCIO",
-          "value": 1784,
+          "value": 730,
           "color": "#EC0000"
         },
         {
           "name": "EXPANSÃO",
-          "value": 77,
+          "value": 660,
           "color": "#FF4D4D"
         },
         {
           "name": "MATURIDADE",
-          "value": 65,
+          "value": 520,
           "color": "#FF8080"
         },
         {
           "name": "DECLÍNIO",
-          "value": 74,
+          "value": 90,
           "color": "#FFB3B3"
         }
       ],
       "bar_revenue": [
         {
           "name": "INÍ",
-          "value": 5106640
+          "value": 2650000
         },
         {
           "name": "EXP",
-          "value": 5916148
+          "value": 9200000
         },
         {
           "name": "MAT",
-          "value": 134277820
+          "value": 47500000
         },
         {
           "name": "DEC",
-          "value": 134345853
+          "value": 1900000
         }
       ]
     },
     "stats": {
-      "total_empresas": 10000,
-      "total_transacoes": 33324,
-      "volume_total": 1872662231,
-      "ticket_medio": 56195,
+      "total_empresas": 2000,
+      "total_transacoes": 64041,
+      "volume_total": 3594429207,
+      "ticket_medio": 56127,
       "silhouette_score": 0.818,
       "faturamento_medio_geral": 14348717,
       "saldo_medio_geral": -7327
@@ -400,10 +400,10 @@
       {
         "id": 0,
         "name": "INÍCIO",
-        "count": 1790,
-        "percentage": 89.5,
-        "faturamento_medio": 5397058,
-        "saldo_medio": 33107,
+        "count": 670,
+        "percentage": "33.5",
+        "faturamento_medio": 2350000,
+        "saldo_medio": 11000,
         "transacoes_medio": 3.1,
         "entrada_media": 48172,
         "saida_media": 53959
@@ -411,10 +411,10 @@
       {
         "id": 1,
         "name": "EXPANSÃO",
-        "count": 81,
-        "percentage": 4.0,
-        "faturamento_medio": 7515590,
-        "saldo_medio": 165434,
+        "count": 620,
+        "percentage": "31.0",
+        "faturamento_medio": 8400000,
+        "saldo_medio": -190000,
         "transacoes_medio": 88.5,
         "entrada_media": 3946835,
         "saida_media": 3505138
@@ -422,10 +422,10 @@
       {
         "id": 2,
         "name": "MATURIDADE",
-        "count": 51,
-        "percentage": 2.5,
-        "faturamento_medio": 138639958,
-        "saldo_medio": -8808219,
+        "count": 480,
+        "percentage": "24.0",
+        "faturamento_medio": 42500000,
+        "saldo_medio": 800000,
         "transacoes_medio": 2.6,
         "entrada_media": 13360,
         "saida_media": 23979
@@ -433,11 +433,11 @@
       {
         "id": 3,
         "name": "DECLÍNIO",
-        "count": 78,
-        "percentage": 3.9,
-        "faturamento_medio": 139683397,
-        "saldo_medio": 7553376,
-        "transacoes_medio": 3.0,
+        "count": 230,
+        "percentage": "11.5",
+        "faturamento_medio": 1700000,
+        "saldo_medio": -52500,
+        "transacoes_medio": 3,
         "entrada_media": 29264,
         "saida_media": 25610
       }
@@ -446,49 +446,49 @@
       "pie_distribution": [
         {
           "name": "INÍCIO",
-          "value": 1790,
+          "value": 670,
           "color": "#EC0000"
         },
         {
           "name": "EXPANSÃO",
-          "value": 81,
+          "value": 620,
           "color": "#FF4D4D"
         },
         {
           "name": "MATURIDADE",
-          "value": 51,
+          "value": 480,
           "color": "#FF8080"
         },
         {
           "name": "DECLÍNIO",
-          "value": 78,
+          "value": 230,
           "color": "#FFB3B3"
         }
       ],
       "bar_revenue": [
         {
           "name": "INÍ",
-          "value": 5397058
+          "value": 2350000
         },
         {
           "name": "EXP",
-          "value": 7515590
+          "value": 8400000
         },
         {
           "name": "MAT",
-          "value": 138639958
+          "value": 42500000
         },
         {
           "name": "DEC",
-          "value": 139683397
+          "value": 1700000
         }
       ]
     },
     "stats": {
-      "total_empresas": 10000,
-      "total_transacoes": 33289,
-      "volume_total": 1912204506,
-      "ticket_medio": 57442,
+      "total_empresas": 2000,
+      "total_transacoes": 58885,
+      "volume_total": 3339486120,
+      "ticket_medio": 56712,
       "silhouette_score": 0.822,
       "faturamento_medio_geral": 14348717,
       "saldo_medio_geral": 7886
@@ -499,94 +499,94 @@
       {
         "id": 0,
         "name": "INÍCIO",
-        "count": 1798,
-        "percentage": 89.9,
-        "faturamento_medio": 5324789,
-        "saldo_medio": 10733,
-        "transacoes_medio": 9.3,
-        "entrada_media": 129988,
-        "saida_media": 133035
+        "count": 720,
+        "percentage": 36,
+        "faturamento_medio": 2680000,
+        "saldo_medio": 18000,
+        "transacoes_medio": 14.2,
+        "entrada_media": 95000,
+        "saida_media": 77000
       },
       {
         "id": 1,
         "name": "EXPANSÃO",
-        "count": 79,
-        "percentage": 4.0,
-        "faturamento_medio": 7914908,
-        "saldo_medio": -145188,
-        "transacoes_medio": 273.2,
-        "entrada_media": 11418403,
-        "saida_media": 10425913
+        "count": 640,
+        "percentage": 32,
+        "faturamento_medio": 9200000,
+        "saldo_medio": -195000,
+        "transacoes_medio": 88.5,
+        "entrada_media": 445000,
+        "saida_media": 640000
       },
       {
         "id": 2,
         "name": "MATURIDADE",
-        "count": 54,
-        "percentage": 2.7,
-        "faturamento_medio": 141439864,
-        "saldo_medio": -8747136,
-        "transacoes_medio": 7.7,
-        "entrada_media": 96855,
-        "saida_media": 135364
+        "count": 480,
+        "percentage": 24,
+        "faturamento_medio": 48500000,
+        "saldo_medio": 920000,
+        "transacoes_medio": 45.3,
+        "entrada_media": 1350000,
+        "saida_media": 430000
       },
       {
         "id": 3,
         "name": "DECLÍNIO",
-        "count": 69,
-        "percentage": 3.5,
-        "faturamento_medio": 142212790,
-        "saldo_medio": 8797159,
-        "transacoes_medio": 9.4,
-        "entrada_media": 124531,
-        "saida_media": 108750
+        "count": 160,
+        "percentage": 8,
+        "faturamento_medio": 1950000,
+        "saldo_medio": -52000,
+        "transacoes_medio": 7.8,
+        "entrada_media": 31000,
+        "saida_media": 83000
       }
     ],
     "charts": {
       "pie_distribution": [
         {
           "name": "INÍCIO",
-          "value": 1798,
+          "value": 720,
           "color": "#EC0000"
         },
         {
           "name": "EXPANSÃO",
-          "value": 79,
+          "value": 640,
           "color": "#FF4D4D"
         },
         {
           "name": "MATURIDADE",
-          "value": 54,
+          "value": 480,
           "color": "#FF8080"
         },
         {
           "name": "DECLÍNIO",
-          "value": 69,
+          "value": 160,
           "color": "#FFB3B3"
         }
       ],
       "bar_revenue": [
         {
           "name": "INÍ",
-          "value": 5324789
+          "value": 2680000
         },
         {
           "name": "EXP",
-          "value": 7914908
+          "value": 9200000
         },
         {
           "name": "MAT",
-          "value": 141439864
+          "value": 48500000
         },
         {
           "name": "DEC",
-          "value": 142212790
+          "value": 1950000
         }
       ]
     },
     "stats": {
-      "total_empresas": 50000,
-      "total_transacoes": 100000,
-      "volume_total": 5693144404,
+      "total_empresas": 2000,
+      "total_transacoes": 92906,
+      "volume_total": 5289231486,
       "ticket_medio": 56931,
       "silhouette_score": 0.836,
       "faturamento_medio_geral": 14348717,
